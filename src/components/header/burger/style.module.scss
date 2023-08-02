@@ -1,0 +1,51 @@
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  height: 120px;
+  width: 150px;
+  background-color: black;
+  cursor: pointer;
+
+  svg {
+    padding: 10px;
+    margin-left: auto;
+  }
+
+  span {
+    color: white;
+    text-transform: uppercase;
+    transition: color 0.5s;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+    background-color: #d3fd50;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    .background {
+      height: 100%;
+    }
+
+    svg {
+      line {
+        stroke: black;
+      }
+    }
+
+    span {
+      color: black;
+    }
+  }
+}
