@@ -3,4 +3,38 @@
   z-index: 100;
   position: absolute;
   inset: 0;
+  padding: 2rem;
+  height: 100vh;
+}
+
+.button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.item {
+  border-top: 1px solid white;
+
+  &:nth-child(3) {
+    border-bottom: 1px solid white;
+  }
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
 }
