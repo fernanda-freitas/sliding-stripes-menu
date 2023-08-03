@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import Burger from "@/components/header/burger";
 import { useState } from "react";
 import Stripes from "./stripes";
+import Menu from "./menu";
 
 export default function Header() {
   const [menuIsOpened, setMenuIsOpened] = useState(false);
@@ -16,7 +17,12 @@ export default function Header() {
     <div className={styles.header}>
       <Burger handleMenu={handleMenuOpen} />
       <AnimatePresence mode="wait">
-        {menuIsOpened && <Stripes />}
+        {menuIsOpened && (
+          <>
+            <Stripes />
+            <Menu />
+          </>
+        )}
       </AnimatePresence>
     </div>
   );

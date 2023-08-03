@@ -6,10 +6,11 @@
   right: 0;
   top: 0;
   padding: 10px;
-  height: 120px;
+  height: 100px;
   width: 150px;
-  background-color: black;
+  background-color: #222221;
   cursor: pointer;
+  z-index: -1;
 
   svg {
     padding: 10px;
@@ -17,7 +18,7 @@
   }
 
   span {
-    color: white;
+    color: #f6eee3;
     text-transform: uppercase;
     transition: color 0.5s;
   }
@@ -29,7 +30,7 @@
     width: 100%;
     height: 0;
     z-index: -1;
-    background-color: #d3fd50;
+    background-color: #f92f2d;
     transition: all 0.3s ease-in-out;
   }
 
@@ -40,12 +41,12 @@
 
     svg {
       line {
-        stroke: black;
+        stroke: #f6eee3;
       }
     }
 
     span {
-      color: black;
+      color: #f6eee3;
     }
   }
 }

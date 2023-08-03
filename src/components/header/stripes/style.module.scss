@@ -2,6 +2,7 @@
   height: 100vh;
   display: flex;
   flex-flow: row-reverse;
+  z-index: 2;
 
   .stripe {
     height: 100%;
@@ -10,7 +11,7 @@
     .background {
       height: 100%;
       width: 100%;
-      background-color: black;
+      background-color: #f92f2d;
     }
   }
 }
