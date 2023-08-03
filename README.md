@@ -6,7 +6,7 @@
 
 First, access the project
 ```bash
-cd animated-menu
+cd sliding-stripes-menu
 ```
 
 Install dependencies:
