@@ -1,6 +1,6 @@
 .menu {
   color: white;
-  z-index: 100;
+  // z-index: 0;
   position: absolute;
   inset: 0;
   padding: 2rem;
@@ -11,6 +11,8 @@
   position: absolute;
   top: 2rem;
   right: 2rem;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .list {
@@ -31,10 +33,10 @@
 }
 
 .title {
-  font-size: 5rem;
-  font-weight: 400;
-  color: white;
   text-transform: uppercase;
-  text-align: center;
+  font-size: 8vw;
+  line-height: 8.2vw;
+  font-weight: 400;
   margin: 0;
+  text-align: center;
 }

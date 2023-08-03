@@ -1,9 +1,13 @@
 import styles from "./style.module.scss";
 
-export default function Menu() {
+export default function Menu({ handleClose }) {
+  const handleClick = () => {
+    handleClose();
+  };
+
   return (
     <div className={styles.menu}>
-      <div>
+      <div onClick={handleClick}>
         <svg
           width="68"
           height="68"
@@ -18,13 +22,13 @@ export default function Menu() {
       </div>
       <div className={styles.list}>
         <div className={styles.item}>
-          <p className={styles.title}>projects</p>
+          <p className={styles.title}>Projects</p>
         </div>
         <div className={styles.item}>
-          <p className={styles.title}>projects</p>
+          <p className={styles.title}>Agence</p>
         </div>
         <div className={styles.item}>
-          <p className={styles.title}>projects</p>
+          <p className={styles.title}>Contact</p>
         </div>
       </div>
     </div>

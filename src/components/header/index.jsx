@@ -9,18 +9,22 @@ import Menu from "./menu";
 export default function Header() {
   const [menuIsOpened, setMenuIsOpened] = useState(false);
 
-  const handleMenuOpen = () => {
-    setMenuIsOpened(!menuIsOpened);
+  const handleOpen = () => {
+    setMenuIsOpened(true);
+  };
+
+  const handleClose = () => {
+    setMenuIsOpened(false);
   };
 
   return (
     <div className={styles.header}>
-      <Burger handleMenu={handleMenuOpen} />
+      <Burger handleOpen={handleOpen} />
       <AnimatePresence mode="wait">
         {menuIsOpened && (
           <>
             <Stripes />
-            <Menu />
+            <Menu handleClose={handleClose} />
           </>
         )}
       </AnimatePresence>
