@@ -15,6 +15,16 @@
   width: auto;
   z-index: 4;
   cursor: pointer;
+
+  path {
+    transition: stroke 0.2s;
+  }
+
+  &:hover {
+    path {
+      stroke: #292929;
+    }
+  }
 }
 
 .list {

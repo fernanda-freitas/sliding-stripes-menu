@@ -28,18 +28,6 @@ export default function Menu({ handleClose }) {
     },
   };
 
-  const opacity = {
-    initial: {
-      opacity: 0,
-    },
-    enter: {
-      opacity: 1,
-    },
-    exit: {
-      opacity: 0,
-    },
-  };
-
   const rotate = {
     initial: {
       rotateX: 90,
