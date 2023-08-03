@@ -48,7 +48,7 @@ export default function Menu({ handleClose }) {
           <path d="M66.5 1L0.999997 66.5" stroke="white" />
         </motion.svg>
       </div>
-      <div className={styles.list}>
+      {/* <div className={styles.list}>
         <div className={styles.item}>
           <p className={styles.title}>Projects</p>
         </div>
@@ -58,7 +58,7 @@ export default function Menu({ handleClose }) {
         <div className={styles.item}>
           <p className={styles.title}>Contact</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

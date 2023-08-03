@@ -10,16 +10,16 @@ export default function Stripes() {
     enter: (index) => ({
       height: "100%",
       transition: {
+        duration: 0.5,
         delay: 0.05 * index,
-        duration: 0.3,
         ease: ease,
       },
     }),
     exit: (index) => ({
       height: 0,
       transition: {
+        duration: 0.3,
         delay: 0.05 * index,
-        duration: 0.1,
         ease: ease,
       },
     }),
@@ -30,7 +30,7 @@ export default function Stripes() {
       opacity: 0,
     },
     enter: {
-      opacity: 0.05,
+      opacity: 0.06,
       transition: {
         duration: 0.4,
       },
