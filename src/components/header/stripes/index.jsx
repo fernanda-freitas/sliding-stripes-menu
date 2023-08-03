@@ -1,5 +1,5 @@
 "use client";
-import { easeInOut, motion } from "framer-motion";
+import { motion, ease } from "framer-motion";
 import styles from "./style.module.scss";
 
 export default function Stripes() {
@@ -10,17 +10,17 @@ export default function Stripes() {
     enter: (index) => ({
       height: "100%",
       transition: {
-        delay: 0.2 * index,
+        delay: 0.05 * index,
         duration: 0.3,
-        ease: [0.5, 0.67, 0.83, 0.67],
+        ease: ease,
       },
     }),
     exit: (index) => ({
       height: 0,
       transition: {
-        delay: 0.2 * index,
-        duration: 0.3,
-        ease: [0.5, 0.67, 0.83, 0.67],
+        delay: 0.05 * index,
+        duration: 0.1,
+        ease: ease,
       },
     }),
   };
@@ -30,12 +30,15 @@ export default function Stripes() {
       opacity: 0,
     },
     enter: {
-      opacity: 1,
+      opacity: 0.05,
+      transition: {
+        duration: 0.4,
+      },
     },
     exit: {
       opacity: 0,
       transition: {
-        delay: 1,
+        duration: 0.4,
       },
     },
   };
@@ -44,15 +47,16 @@ export default function Stripes() {
     <motion.div key="stripes" className={styles.stripes}>
       {[...Array(5)].map((_, index) => {
         return (
-          <motion.div
-            key={index}
-            custom={index}
-            className={styles.stripe}
-            variants={height}
-            initial="initial"
-            animate="enter"
-            exit="exit"
-          >
+          <>
+            <motion.div
+              key={index}
+              custom={index}
+              className={styles.stripe}
+              variants={height}
+              initial="initial"
+              animate="enter"
+              exit="exit"
+            ></motion.div>
             <motion.div
               key={index}
               className={styles.background}
@@ -61,7 +65,7 @@ export default function Stripes() {
               animate="enter"
               exit="exit"
             ></motion.div>
-          </motion.div>
+          </>
         );
       })}
     </motion.div>
