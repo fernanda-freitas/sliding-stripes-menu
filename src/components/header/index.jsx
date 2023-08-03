@@ -18,7 +18,6 @@ export default function Header() {
       <AnimatePresence mode="wait">
         {menuIsOpened && <Stripes />}
       </AnimatePresence>
-      <Stripes />
     </div>
   );
 }

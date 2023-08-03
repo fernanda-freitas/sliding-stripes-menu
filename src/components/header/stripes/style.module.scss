@@ -1,7 +1,16 @@
 .stripes {
   height: 100vh;
+  display: flex;
+  flex-flow: row-reverse;
 
   .stripe {
-    background-color: black;
+    height: 100%;
+    width: 20vw;
+
+    .background {
+      height: 100%;
+      width: 100%;
+      background-color: black;
+    }
   }
 }
