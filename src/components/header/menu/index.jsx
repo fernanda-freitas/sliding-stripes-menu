@@ -1,6 +1,7 @@
 import styles from "./style.module.scss";
 import { motion, ease } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 
 export default function Menu({ handleClose }) {
   const listItem = useRef(null);
@@ -115,7 +116,20 @@ export default function Menu({ handleClose }) {
               >
                 <span className={styles.title}>{item.title}</span>
                 <div className={styles.hoverbox}>
-                  <span className={styles.titlehover}>{item.description}</span>
+                  <Image
+                    src={`/images/${item.images[0]}`}
+                    width={350}
+                    height={120}
+                    alt="image"
+                  />
+                  <span className={styles.hovertitle}>{item.description}</span>
+                  <Image
+                    src={`/images/${item.images[1]}`}
+                    width={350}
+                    height={120}
+                    alt="image"
+                  />
+                  <span className={styles.hovertitle}>{item.description}</span>
                 </div>
               </motion.div>
             </motion.div>
