@@ -2,12 +2,6 @@
 
 <img src="https://github.com/fernanda-freitas/sliding-stripes-menu/assets/33285862/24cc48df-232e-4efe-ac8b-59ddcb0e2c3b" alt="Image" width="850">
 
-
-
-https://github.com/fernanda-freitas/sliding-stripes-menu/assets/33285862/23336894-657d-4b18-948f-5925dba6f0a5
-
-
-
 </br>
 </br>
 
