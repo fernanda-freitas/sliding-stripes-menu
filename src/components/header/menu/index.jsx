@@ -1,7 +1,10 @@
 import styles from "./style.module.scss";
 import { motion, ease } from "framer-motion";
+import { useRef } from "react";
 
 export default function Menu({ handleClose }) {
+  const listItem = useRef(null);
+
   const handleClick = () => {
     handleClose();
   };
@@ -48,7 +51,27 @@ export default function Menu({ handleClose }) {
     },
   };
 
-  const menuItems = ["Projects", "Agence", "Contact"];
+  const menuItems = [
+    {
+      title: "Projects",
+      description: "To See Everything",
+      images: ["projects1.jpg", "projects2.jpg"],
+    },
+    {
+      title: "Agence",
+      description: "To Learn Everything",
+      images: ["agence1.jpg", "agence2.jpg"],
+    },
+    {
+      title: "Contact",
+      description: "To Send a FAX",
+      images: ["contact1.jpg", "contact2.jpg"],
+    },
+  ];
+
+  const handleMouseEnter = () => {};
+
+  const handleMouseLeave = () => {};
 
   return (
     <div className={styles.menu}>
@@ -83,7 +106,18 @@ export default function Menu({ handleClose }) {
               key={index}
               className={styles.item}
             >
-              <p className={styles.title}>{item}</p>
+              <motion.div
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                className={styles.container}
+                key={index}
+                ref={listItem}
+              >
+                <span className={styles.title}>{item.title}</span>
+                <div className={styles.hoverbox}>
+                  <span className={styles.titlehover}>{item.description}</span>
+                </div>
+              </motion.div>
             </motion.div>
           );
         })}
