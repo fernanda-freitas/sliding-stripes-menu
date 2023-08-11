@@ -1,8 +1,6 @@
 ## Sliding stripes menu
 
-<img src="https://github.com/fernanda-freitas/sliding-stripes-menu/assets/33285862/5fe4c8aa-2d10-4d1e-bc7f-2682b41adb5a" alt="Image" width="850">
-
-![Screen_Recording_2023-08-11_at_10_26_02_AdobeExpress](https://github.com/fernanda-freitas/sliding-stripes-menu/assets/33285862/5fe4c8aa-2d10-4d1e-bc7f-2682b41adb5a)
+<img src="https://github.com/fernanda-freitas/sliding-stripes-menu/assets/33285862/5fe4c8aa-2d10-4d1e-bc7f-2682b41adb5a" alt="Image" width="550">
 
 </br>
 </br>
