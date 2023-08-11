@@ -11,19 +11,17 @@
 This project showcases a dynamic sliding stripes menu built using HTML, CSS, and JavaScript. The menu is designed to provide an engaging user experience by smoothly sliding in and out.
 The design and functionality of this sliding stripes menu were inspired by Olivier Larose's innovative <a href="https://blog.olivierlarose.com/demos/sliding-stairs-menu" target="_blank">Stairs Menu</a>
 
-</br>
-
-##### First, access the project
+#### First, access the project
 ```bash
 cd sliding-stripes-menu
 ```
 
-##### Install dependencies:
+#### Install dependencies:
 ```bash
 npm install
 ```
 
-##### Then run server and acess it at ```bash http://localhost:3000```
+#### Then run server and acess it at ```bash http://localhost:3000```
 ```bash
 npm run dev
 ```
