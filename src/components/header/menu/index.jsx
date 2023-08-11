@@ -118,16 +118,18 @@ export default function Menu({ handleClose }) {
                 <div className={styles.hoverbox}>
                   <Image
                     src={`/images/${item.images[0]}`}
-                    width={350}
                     height={120}
+                    width={450}
                     alt="image"
+                    className={styles.hoverimage}
                   />
                   <span className={styles.hovertitle}>{item.description}</span>
                   <Image
                     src={`/images/${item.images[1]}`}
-                    width={350}
                     height={120}
+                    width={450}
                     alt="image"
+                    className={styles.hoverimage}
                   />
                   <span className={styles.hovertitle}>{item.description}</span>
                 </div>
